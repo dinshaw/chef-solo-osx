@@ -1,0 +1,10 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    dmg (2.1.4)
+    homebrew (1.5.4)
+
+DEPENDENCIES
+  dmg (>= 0)
+  homebrew (>= 0)
+

@@ -11,3 +11,10 @@ dmg_package 'Sonos' do
   action :install
   accept_eula true
 end
+
+package 'mysql' do
+  action :install
+end
+package 'redis' do
+  action :install
+end

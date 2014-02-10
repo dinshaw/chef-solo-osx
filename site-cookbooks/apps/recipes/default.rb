@@ -12,9 +12,11 @@ dmg_package 'Sonos' do
   accept_eula true
 end
 
+# defaults to homebrew package provider
 package 'mysql' do
   action :install
 end
+
 package 'redis' do
   action :install
 end

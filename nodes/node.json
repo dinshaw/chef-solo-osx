@@ -5,6 +5,7 @@
     "recipe[mac_os_x::dock_preferences]",
     "recipe[mac_os_x::settings]",
     "recipe[mac_os_x::key_repeat]",
+    "recipe[mac_os_x::kbaccess]",
     "recipe[apps]",
     "recipe[defaults]"
   ],
@@ -20,6 +21,15 @@
         "ShowMountedServersOnDesktop": true,
         "ShowRemovableMediaOnDesktop": true,
         "ShowStatusBar": true
+      },
+     "dock": {
+       "domain": "com.apple.dock",
+       "no-glass": true,
+       "autohide": true,
+       "showhidden": true,
+       "magnification": false,
+       "show-process-indicators": false,
+       "checked-for-launchpad": true
       }
     }
   }

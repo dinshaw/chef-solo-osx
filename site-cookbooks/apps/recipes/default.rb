@@ -4,5 +4,10 @@ dmg_package 'Google Chrome' do
   checksum '7daa2dc5c46d9bfb14f1d7ff4b33884325e5e63e694810adc58f14795165c91a'
   action   :install
 end
-# little snitch
-# box sync
+
+dmg_package 'Sonos' do
+  dmg_name 'sonos'
+  source "http://www.sonos.com/redir/controller_software_mac"
+  action :install
+  accept_eula true
+end

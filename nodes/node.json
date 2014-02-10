@@ -2,7 +2,26 @@
   "run_list": [
     "recipe[homebrew]",
     "recipe[dmg]",
-    "recipe[apps]"
-  ]
+    "recipe[mac_os_x::dock_preferences]",
+    "recipe[mac_os_x::settings]",
+    "recipe[mac_os_x::key_repeat]",
+    "recipe[apps]",
+    "recipe[defaults]"
+  ],
+  "mac_os_x": {
+    "settings": {
+      "finder": {
+        "domain": "com.apple.finder",
+        "FXPreferredViewStyle": "clmv",
+        "NewWindowTarget": "PfHm",
+        "RemoveIDiskFromSidebarOnStartup": true,
+        "ShowExternalHardDrivesOnDesktop": true,
+        "ShowHardDrivesOnDesktop": false,
+        "ShowMountedServersOnDesktop": true,
+        "ShowRemovableMediaOnDesktop": true,
+        "ShowStatusBar": true
+      }
+    }
+  }
 }
 

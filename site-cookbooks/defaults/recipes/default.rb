@@ -8,6 +8,6 @@ end
 mac_os_x_userdefaults "full keyboard access to all controls" do
   key "AppleKeyboardUIMode"
   global true
-  value "2"
+  value "3"
 end
 

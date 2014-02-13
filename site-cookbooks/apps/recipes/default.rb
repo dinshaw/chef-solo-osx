@@ -25,6 +25,6 @@ package 'rbenv' do
   action :install
 end
 
-package 'ruby_build' do
+package 'ruby-build' do
   action :install
 end

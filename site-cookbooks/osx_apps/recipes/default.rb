@@ -5,12 +5,12 @@ dmg_package 'Google Chrome' do
   action   :install
 end
 
-dmg_package 'Sonos' do
-  dmg_name 'sonos'
-  source "http://www.sonos.com/redir/controller_software_mac"
-  action :install
-  accept_eula true
-end
+# dmg_package 'Sonos' do
+#   dmg_name 'sonos'
+#   source "http://www.sonos.com/redir/controller_software_mac"
+#   action :install
+#   accept_eula true
+# end
 
 # defaults to homebrew package provider
 package 'mysql' do

@@ -1,3 +1,5 @@
+include_recipe "mac_os_x::settings"
+
 mac_os_x_userdefaults "show hard drives on the desktop" do
   domain "com.apple.finder"
   key "ShowHardDrivesOnDesktop"
@@ -10,4 +12,5 @@ mac_os_x_userdefaults "full keyboard access to all controls" do
   global true
   value "3"
 end
+
 

@@ -1,36 +1,3 @@
 {
-  "run_list": [
-    "recipe[homebrew]",
-    "recipe[dmg]",
-    // "recipe[mac_os_x::dock_preferences]",
-    // "recipe[mac_os_x::key_repeat]",
-    // "recipe[mac_os_x::kbaccess]",
-    "recipe[osx_apps]"
-    // "recipe[osx_defaults]"
-  ]
-  // "mac_os_x": {
-  //   "settings": {
-  //     "finder": {
-  //       "domain": "com.apple.finder",
-  //       "FXPreferredViewStyle": "clmv",
-  //       "NewWindowTarget": "PfHm",
-  //       "RemoveIDiskFromSidebarOnStartup": true,
-  //       "ShowExternalHardDrivesOnDesktop": true,
-  //       "ShowHardDrivesOnDesktop": false,
-  //       "ShowMountedServersOnDesktop": true,
-  //       "ShowRemovableMediaOnDesktop": true,
-  //       "ShowStatusBar": true
-  //     },
-  //    "dock": {
-  //      "domain": "com.apple.dock",
-  //      "no-glass": true,
-  //      "autohide": true,
-  //      "showhidden": true,
-  //      "magnification": false,
-  //      "show-process-indicators": false,
-  //      "checked-for-launchpad": true
-  //     }
-  //   }
-  // }
+  "run_list": ["role[my_workstation]"]
 }
-

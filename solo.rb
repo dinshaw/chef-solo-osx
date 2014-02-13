@@ -1,4 +1,3 @@
-
 file_cache_path '/Users/dgobhai/chef-solo'
 
 cookbook_path [

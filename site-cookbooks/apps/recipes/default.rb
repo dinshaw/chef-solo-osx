@@ -20,3 +20,11 @@ end
 package 'redis' do
   action :install
 end
+
+package 'rbenv' do
+  action :install
+end
+
+package 'ruby_build' do
+  action :install
+end

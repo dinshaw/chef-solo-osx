@@ -1,1 +1,1 @@
-sudo chef-solo -c ./solo.rb
+chef-solo -c ./solo.rb

@@ -1,4 +1,4 @@
-file_cache_path '/Users/dgobhai/chef-solo'
+file_cache_path "/Users/#{ENV['USER']}/chef-solo"
 
 cookbook_path [
   File.expand_path("../cookbooks", __FILE__),

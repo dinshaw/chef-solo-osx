@@ -28,3 +28,14 @@ end
 package 'ruby-build' do
   action :install
 end
+
+git "/Users/dgobhai/.dotfiles" do
+  repository "git://github.com/dinshaw/dotfiles.git"
+  reference "master"
+  action :sync
+end
+
+execute 'install Jruby' do
+  command 'rbenv install jruby-1.7.9'
+  not_if 'rbenv versions | grep jruby-1.7.9'
+end

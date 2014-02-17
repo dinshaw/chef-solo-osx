@@ -4,7 +4,7 @@ run_list [
   'recipe[homebrew]',
   'recipe[dmg]',
   'recipe[my_apps]',
-  'recipe[mac_os_x::settings]'
+  'recipe[mac_os_x::settings]',
 ]
 default_attributes(
   'mac_os_x' => {

@@ -29,7 +29,7 @@ package 'ruby-build' do
   action :install
 end
 
-git "/Users/dgobhai/.dotfiles" do
+git "/Users/#{ENV['USER']}/.dotfiles" do
   repository "git://github.com/dinshaw/dotfiles.git"
   reference "master"
   action :sync

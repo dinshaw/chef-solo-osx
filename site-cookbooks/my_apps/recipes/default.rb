@@ -5,18 +5,20 @@ dmg_package 'Google Chrome' do
   action   :install
 end
 
-dmg_package 'Sonos' do
-  dmg_name 'sonos'
-  source "http://www.sonos.com/redir/controller_software_mac"
-  action :install
-  accept_eula true
+
+dmg_package 'Aurora' do
+  volumes_dir 'Aurora'
+  app 'FirefoxAurora'
+  source   'http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-aurora/firefox-29.0a2.en-US.mac.dmg'
+  checksum '2f19bf95a02a299d5cf32d9f654d6fd29cd50945a556ead84480d0d209ff7332'
+  action   :install
 end
+
 
 # defaults to homebrew package provider
 package 'mysql' do
   action :install
 end
-
 package 'redis' do
   action :install
 end

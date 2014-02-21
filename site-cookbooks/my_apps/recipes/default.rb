@@ -29,13 +29,22 @@ package 'ruby-build' do
   action :install
 end
 
+package 'phantomjs' do
+  action :install
+end
+
 git "/Users/#{ENV['USER']}/.dotfiles" do
   repository "git://github.com/dinshaw/dotfiles.git"
   reference "master"
   action :sync
 end
 
+execute 'install Ruby' do
+  command 'rbenv install 2.1.0'
+  not_if 'rbenv versions | grep 2.1.0'
+end
+
 execute 'install Jruby' do
-  command 'rbenv install jruby-1.7.9'
-  not_if 'rbenv versions | grep jruby-1.7.9'
+  command 'rbenv install jruby-1.7.10'
+  not_if 'rbenv versions | grep jruby-1.7.10'
 end
